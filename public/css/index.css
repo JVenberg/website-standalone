@@ -269,17 +269,17 @@ footer h3 {
 }
 
 
-#video-games {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/games.jpg");
-  background-position: top;
+#waterfront {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/waterfront.jpg");
+  background-position: center;
 }
 
 /* CITATION
 This image is from https://hackernoon.com/how-will-coding-be-relevant-in-the-future-74594c2b015f.
 */
-#coding {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/coding.jpeg");
-  background-position: top;
+#downtown {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/downtown.jpeg");
+  background-position: center;
 }
 
 #fast-facts > li {
