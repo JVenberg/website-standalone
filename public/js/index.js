@@ -19,9 +19,8 @@ This is the index.js script for my "About Me" page.
   window.addEventListener("load", function() {
     writeText(TYPE_TEXT, $("intro"), 0);
 
-    let ua = navigator.userAgent;
-    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua) &&
-          /Chrome/i.test(ua) || /Firefox/i.test(ua)) {
+    if ('CSS' in window && CSS.supports('mix-blend-mode', 'difference') &&
+        CSS.supports('clip-path', 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)')) {
       initializeScrollNav();
     } else {
       defaultNav();
