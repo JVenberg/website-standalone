@@ -278,7 +278,7 @@ footer h3 {
 This image is from https://hackernoon.com/how-will-coding-be-relevant-in-the-future-74594c2b015f.
 */
 #downtown {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/downtown.jpeg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/downtown.jpg");
   background-position: center;
 }
 
