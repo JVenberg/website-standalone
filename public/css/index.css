@@ -139,7 +139,7 @@ nav > a:hover {
 This image is from https://crosscut.com/2015/11/uw-union-push-pits-empowerment-vs-excellence.
 */
 header {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/uw.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/uw_med.jpg");
   display: flex;
   align-items: center;
 }
@@ -270,7 +270,7 @@ footer h3 {
 
 
 #waterfront {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/waterfront.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/waterfront_med.jpg");
   background-position: center;
 }
 
@@ -278,7 +278,7 @@ footer h3 {
 This image is from https://hackernoon.com/how-will-coding-be-relevant-in-the-future-74594c2b015f.
 */
 #downtown {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/downtown.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/downtown_med.jpg");
   background-position: center;
 }
 
