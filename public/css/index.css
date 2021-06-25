@@ -157,14 +157,6 @@ section > nav > a {
   color: black;
 }
 
-article, aside {
-  width: 50%;
-}
-
-article h1, aside h1 {
-  text-align: center;
-}
-
 .header-texts {
   position: relative;
 }
@@ -245,7 +237,7 @@ footer h3 {
 .content {
   position: relative;
   z-index: 2;
-
+  flex-direction: column;
   padding-bottom: 50px;
 }
 
@@ -273,28 +265,9 @@ footer h3 {
   background-position: center;
 }
 
-/* CITATION
-This image is from https://hackernoon.com/how-will-coding-be-relevant-in-the-future-74594c2b015f.
-*/
 #downtown {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/downtown_med.jpg");
   background-position: center;
-}
-
-#fast-facts > li {
-  font-size: 24px;
-}
-
-#tips-list {
-  width: 100%;
-}
-
-#tips-list > ul > li {
-  list-style: none;
-}
-
-#tips-list h3 {
-  font-weight: bold;
 }
 
 /*****************************************************
