@@ -220,6 +220,13 @@ footer h3 {
   position: relative;
 }
 
+/* Fixes iOS last of support of fixed attachment */
+@supports (not (background-attachment: fixed)) {
+  .parallax {
+    background-attachment: initial;
+  }
+}
+
 .content:before {
   background: inherit;
   top: 0;
