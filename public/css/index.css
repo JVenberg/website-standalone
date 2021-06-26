@@ -221,7 +221,7 @@ footer h3 {
 }
 
 /* Fixes iOS lack of support of fixed attachment */
-@supports (not (background-attachment: fixed)) {
+@supports (-webkit-touch-callout: none) {
   .parallax {
     background-attachment: initial;
   }
