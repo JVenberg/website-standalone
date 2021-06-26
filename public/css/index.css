@@ -220,7 +220,7 @@ footer h3 {
   position: relative;
 }
 
-/* Fixes iOS last of support of fixed attachment */
+/* Fixes iOS lack of support of fixed attachment */
 @supports (not (background-attachment: fixed)) {
   .parallax {
     background-attachment: initial;
