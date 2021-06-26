@@ -25,7 +25,6 @@ This is the index.js script for my "About Me" page.
     } else {
       defaultNav();
     }
-    initializeSlideShow();
   });
 
   /**
@@ -34,21 +33,6 @@ This is the index.js script for my "About Me" page.
   function defaultNav() {
     $("nav-shadow").classList.remove("hidden");
     $("top-nav").classList.add("default-nav");
-  }
-
-  /**
-   * Initializes image slide show.
-   */
-  function initializeSlideShow() {
-    showDivs(slideIndex);
-    let slides = document.getElementsByClassName("slides");
-
-    $("left-btn").onclick = function() {
-      plusDivs(-1);
-    }
-    $("right-btn").onclick = function() {
-      plusDivs(1);
-    }
   }
 
   /**
@@ -78,39 +62,13 @@ This is the index.js script for my "About Me" page.
   }
 
   /**
-   * Flips forward/backwards the given "change" amount.
-   * @param {number} change - given index change of slider.
-   */
-  function plusDivs(change) {
-    showDivs(slideIndex += change);
-  }
-
-  /**
-  * Shows slide of given "index".
-  * @param {number} index - changes slided to this index.
-  */
-  function showDivs(index) {
-    let slides = document.getElementsByClassName("slides");
-    if (index >= slides.length) {
-      slideIndex = 0;
-    }
-    if (index < 0) {
-      slideIndex = slides.length - 1;
-    }
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.add("invisible");
-    }
-    slides[slideIndex].classList.remove("invisible");
-  }
-
-  /**
   * Changes the color scheme of the nav bar when the nav bar crosses the card of
   * the page.
   * @param {array} sections - array of DOM elements.
   */
   function updateNavBackground(sections) {
     let intersect = false;
-    for (section of sections) {
+    for (let section of sections) {
       let box = section.getBoundingClientRect();
 
       let top = box.top - OFFSET;
