@@ -7,17 +7,14 @@ This is the index.js script for my "About Me" page.
 */
 
 (function () {
-  const TYPE_TEXT = "Hello! My name is Jack Venberg!";
   const TYPE_SPEED = 50;
   const NAV_HEIGHT = 70;
   const OFFSET = Math.sin(2 * Math.PI / 180) * window.innerWidth;
   const NAV_ANGLE = Math.sin(2 * Math.PI / 180) * Math.sin(88 * Math.PI / 180);
 
-  let slideIndex = 0;
-
   /** Runs once the page has loaded to set up the image slideshow */
   window.addEventListener("load", function() {
-    writeText(TYPE_TEXT, $("intro"), 0);
+    writeText($("intro-text").textContent, $("intro"), 0);
 
     if ('CSS' in window && CSS.supports('mix-blend-mode', 'difference') &&
         CSS.supports('clip-path', 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)')) {
@@ -46,11 +43,9 @@ This is the index.js script for my "About Me" page.
     $("nav-background").classList.remove("hidden");
     $("nav-shadow").classList.remove("hidden");
 
-    let last_known_scroll_position = 0;
     let ticking = false;
 
     window.addEventListener("scroll", () => {
-      last_known_scroll_position = window.scrollY;
       if (!ticking) {
         window.requestAnimationFrame(() => {
           updateNavBackground(sections);
@@ -118,7 +113,7 @@ This is the index.js script for my "About Me" page.
   */
   function writeText(text, ele, index) {
     if (index < text.length) {
-      ele.innerHTML += text.charAt(index);
+      ele.textContent += text.charAt(index);
       setTimeout(writeText, TYPE_SPEED, text, ele, index + 1);
     } else {
       $("cursor").classList.add("blinking-cursor");
