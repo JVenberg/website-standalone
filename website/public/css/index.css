@@ -277,6 +277,10 @@ footer h3 {
   background-position: center;
 }
 
+.content article {
+  border-bottom: black 2px solid;
+}
+
 /*****************************************************
 ----------------- FONT AWESOME STYLE -----------------
 ******************************************************/
