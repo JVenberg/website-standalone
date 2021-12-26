@@ -1,6 +1,7 @@
 FROM nginx
 
 RUN apt-get update
+RUN apt-get install cron -y
 RUN apt-get install certbot -y
 RUN apt-get install python-certbot-nginx -y
 
